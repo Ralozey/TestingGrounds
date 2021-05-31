@@ -4,11 +4,12 @@ var client;
 
 module.exports = {
 	connect:function(){
-		var connectString = process.env.DATABASE_URL || "postgres://aubtmwsueljmlo:NgGgFPZeIadarZo81gp-1EKN93@ec2-23-23-199-181.compute-1.amazonaws.com:5432/d80g2kksssndck?ssl=true";
+		var connectString = process.env.DATABASE_URL || "postgres://vbdnorqrpztaiq:546a9238ce6344facd220ffaf984e0caf87b959c2d2d09e16f55c4124a7fdf8d@ec2-54-83-53-8.compute-1.amazonaws.com:5432/db24oke0rni4ei";
 		try
 		{
 			client = new pg.Client(connectString);
-			client.connect();	
+			client.connect();
+			console.log(client);
 		}
 		catch(e)
 		{

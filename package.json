@@ -5,6 +5,9 @@
   "engines" : {
   "node" : "4.3.0"
   },
+  "scripts": {
+    "run": "npm start"
+  },
   "description": "Web chat client for the TestingGrounds",
   "dependencies": {
     "moment": "^2.10.6",
