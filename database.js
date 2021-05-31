@@ -8,7 +8,7 @@ module.exports = {
 		try
 		{
 			client = new pg.Client({
-				connectString,
+				connectionString: connectString,
 				ssl: {
 					rejectUnauthorized: false
 				}
