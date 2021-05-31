@@ -7,7 +7,7 @@ module.exports = {
 		try
 		{
 			client = new pg.Client({
-				connectionString: process.env.DATABASE_URL,
+				connectionString: "postgres://vbdnorqrpztaiq:546a9238ce6344facd220ffaf984e0caf87b959c2d2d09e16f55c4124a7fdf8d@ec2-54-83-53-8.compute-1.amazonaws.com:5432/db24oke0rni4ei",
 				ssl: {
 					rejectUnauthorized: false
 				}
